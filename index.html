@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 04 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="js/apicode.js" defer></script>
+</head>
+
+<body>
+	<h1>Assignment 04 - Google Book API</h1>
+	<!-- adding my student id and name dinamycally using a p tag -->
+	<p id="studentId"></p>
+	<!-- adding an image dinamycally using a javascript -->
+	<p id="image"></p>
+	<!-- <p>&nbsp;</p> -->
+	<!-- Api -->
+    <h2>Choose between these two Searching Options!</h2>
+	<div class="container">
+        <div class="form-container">
+            <h3>Search by Title</h3>
+            <form id="titleForm">
+                <div class="form-group">
+                    <label for="titleInput">Title:</label>
+                    <input type="text" id="titleInput" name="titleInput" placeholder="Enter title of book">
+                </div>
+                <div class="form-group">
+                    <label for="titleOption">Search Option:</label>
+                    <select id="titleOption" name="titleOption">
+						<!-- Setting up 11 options predefined -->
+                        <option value=""></option>
+                        <option value="A clockwork orange">A clockwork orange</option>
+                        <option value="Harry Potter">Harry Potter</option>
+                        <option value="Metamorphosis">Metamorphosis</option>
+                        <option value="Lord of the flies">Lord of the flies</option>
+						<option value="Blindness">Blindness</option>
+                        <option value="Lolita">Lolita</option>
+                        <option value="Nausea">Nausea</option>
+                        <option value="One hundred years of solitude">One hundred years of solitude</option>
+                        <option value="Aunt Julia and the scriptwriter">Aunt Julia and the scriptwriter</option>
+                        <option value="The waves">The waves</option>
+                        <option value="Pinball 1973">Pinball 1973</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button id="bt1" type="submit">Go!</button>
+                </div>
+            </form>
+            <div id="titleResults">
+                <section id="result1"></section>
+            </div>
+        </div>
+        <div class="form-container">
+            <h3>Search by Author</h3>
+            <form id="authorForm">
+                <div class="form-group">
+                    <label for="authorInput">Author:</label>
+                    <input type="text" id="authorInput" name="authorInput" placeholder="Enter author of book">
+                </div>
+                <div class="form-group">
+                    <label for="authorOption">Search Option:</label>
+                    <select id="authorOption" name="authorOption">
+						<!-- Setting up 11 options predefined  -->
+                        <option value=""></option>
+                        <option value="Anthony Burgess">Anthony Burgess</option>
+                        <option value="J. K. Rowling">J. K. Rowling</option>
+                        <option value="Franz Kafka">Franz Kafka</option>
+						<option value="William Golding">William Golding</option>
+						<option value="Jose Saramago">Jose Saramago</option>
+                        <option value="Vladimir Nabokov">Vladimir Nabokov</option>
+                        <option value="Jean-Paul Sartre">Jean-Paul Sartre</option>
+                        <option value="Gabriel Garcia Marquez">Gabriel Garcia Marquez</option>
+                        <option value="Mario Vargas Llosa">Mario Vargas Llosa</option>
+                        <option value="Virginia Woolf">Virginia Woolf</option>
+                        <option value="Haruki Murakami">Haruki Murakami</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button id="bt2" type="submit">Go!</button>
+                </div>
+            </form>
+            <div id="authorResults">
+                <section id="result2"></section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
